@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   fileDate: {
     fontSize: 14,
     color: "#666"
-  },
+  } /* ,
 
   fab: {
     position: "absolute",
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     alignItems: "center",
     justifyContent: "center"
-  }
+  } */
 });
 
 export default styles;

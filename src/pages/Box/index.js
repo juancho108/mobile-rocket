@@ -25,7 +25,7 @@ export default class Box extends Component {
     this.setState({ box: response.data });
   }
 
-  renderItem = ({ item }) => {
+  renderItem = ({ item }) => (
     <TouchableOpacity onPress={() => {}} style={styles.file}>
       <View style={styles.fileInfo}>
         <Icon name="insert-drive-file" size={24} color="#A5CFFF" />
@@ -38,14 +38,13 @@ export default class Box extends Component {
           locale: es
         })}
       </Text>
-    </TouchableOpacity>;
-  };
+    </TouchableOpacity>
+  );
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.boxTitle}>JuancitoAPP</Text>
-
+        <Text style={styles.boxTitle}>{this.state.box.title}</Text>
         <FlatList
           styles={styles.list}
           data={this.state.box.files}
